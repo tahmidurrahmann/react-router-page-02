@@ -16,11 +16,13 @@ import Posts from './components/Posts/Posts.jsx';
 import PostDetails from './components/PostDetails/PostDetails.jsx';
 import Comments from './components/Comments/Comments.jsx';
 import CommentDetails from './components/CommentDetails/CommentDetails.jsx';
+import Error from './components/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement : <Error></Error>,
     children: [
       {
         path: '/about',
@@ -71,5 +73,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router}></RouterProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
