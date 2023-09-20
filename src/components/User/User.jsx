@@ -12,7 +12,7 @@ const User = ({ user }) => {
             <h3>{name}</h3>
             <h5>User : {username}</h5>
             <p>Email : {email}</p>
-            <Link to={`/user/${id}`}>Show Details</Link>
+            <Link to={`/user/${id}`}>Show details</Link>
             <button onClick={handleUser}>Show Details</button>
         </div>
     );

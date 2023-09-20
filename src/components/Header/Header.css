@@ -4,3 +4,12 @@
     align-items: center;
     justify-content: center;
 }
+.link-container a.active{
+    color: whitesmoke;
+    background: slateblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 12px;
+}
